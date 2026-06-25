@@ -1,140 +1,135 @@
 # BrokerVision — Insurance Broker Dashboard
 
-> Plataforma web para corretores de seguros gerenciarem cotações, apólices, tomadores e relatórios de performance em um único painel.
+> Web platform for insurance brokers to manage quotes, policies, policyholders, and performance reports in a single dashboard.
 
 ---
 
-## Visão geral
+## Overview
 
-O BrokerVision é um dashboard SPA construído com **Nuxt 4** e **Nuxt UI v4**, pensado para corretores de seguros que precisam de um ambiente ágil para emitir cotações multi-etapa, acompanhar apólices, gerenciar tomadores e extrair relatórios de desempenho — tudo com suporte a dark mode e internacionalização (PT/EN).
+BrokerVision is a SPA dashboard built with **Nuxt 4** and **Nuxt UI v4**, designed for insurance brokers who need an agile environment to issue multi-step quotes, track policies, manage policyholders, and extract performance reports — with full dark mode and internationalization (PT/EN) support.
 
 ---
 
 ## Stack
 
-| Camada                  | Tecnologia                                                                         |
-| ----------------------- | ---------------------------------------------------------------------------------- |
-| Framework               | [Nuxt 4](https://nuxt.com) (SSR opcional, `srcDir: app`)                           |
-| UI / Estilo             | [Nuxt UI v4](https://ui.nuxt.com) + [Tailwind CSS v4](https://tailwindcss.com)     |
-| Linguagem               | TypeScript 6                                                                       |
-| Internacionalização     | [@nuxtjs/i18n v10](https://i18n.nuxtjs.org) — PT-BR / EN                           |
-| Gráficos                | [Chart.js v4](https://www.chartjs.org) + [vue-chartjs v5](https://vue-chartjs.org) |
-| Ícones                  | [Lucide](https://lucide.dev) + [Simple Icons](https://simpleicons.org) via Iconify |
-| Gerenciamento de estado | Composables com `ref` em escopo de módulo                                          |
-| Package manager         | [pnpm](https://pnpm.io)                                                            |
-| Linting                 | ESLint + `@nuxt/eslint`                                                            |
-| Testes                  | Vitest + Vue Test Utils                                                            |
+| Layer            | Technology                                                                         |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| Framework        | [Nuxt 4](https://nuxt.com) (optional SSR, `srcDir: app`)                           |
+| UI / Styling     | [Nuxt UI v4](https://ui.nuxt.com) + [Tailwind CSS v4](https://tailwindcss.com)     |
+| Language         | TypeScript 6                                                                       |
+| i18n             | [@nuxtjs/i18n v10](https://i18n.nuxtjs.org) — PT-BR / EN                           |
+| Charts           | [Chart.js v4](https://www.chartjs.org) + [vue-chartjs v5](https://vue-chartjs.org) |
+| Icons            | [Lucide](https://lucide.dev) + [Simple Icons](https://simpleicons.org) via Iconify |
+| State management | Module-scoped composables with `ref`                                               |
+| Package manager  | [pnpm](https://pnpm.io)                                                            |
+| Linting          | ESLint + `@nuxt/eslint`                                                            |
+| Testing          | Vitest + Vue Test Utils                                                            |
 
 ---
 
-## Funcionalidades
-
-### Autenticação
-
-- Tela de login com validação de campos
-- Recuperação de senha (`/forgot`)
+## Features
 
 ### Dashboard (`/home`)
 
-- Cards de métricas em tempo real (cotações, taxa de conversão, prêmio emitido, comissão)
-- Ações rápidas por produto (Garantia, Empresarial, Vida)
-- Painel de notificações com marcação de leitura e remoção individual
+- Real-time metric cards (quotes, conversion rate, issued premium, commission)
+- Quick actions per product (Surety, Commercial, Life)
+- Notification panel with mark-as-read and individual dismiss
 
-### Cotação multi-etapa (`/quotes/create`)
+### Multi-step Quote (`/quotes/create`)
 
-Fluxo guiado em **4 etapas** com stepper visual:
+Guided flow in **4 steps** with a visual stepper:
 
-1. **Cotação** — produto, modalidade, IS, vigência e comissão
-2. **Segurado** — dados do segurado principal (nome, CNPJ/CPF, contato)
-3. **Risco** — objeto contratual, número de processo e local do risco
-4. **Pagamento** — seleção de método (boleto, PIX, cartão) com parcelamento e breakdown financeiro
+1. **Quote** — product, modality, insured amount, validity, and commission
+2. **Insured** — main insured data (name, CNPJ/CPF, contact)
+3. **Risk** — contractual object, process number, and risk location
+4. **Payment** — method selection (boleto, PIX, card) with installments and financial breakdown
 
-### Cotações salvas (`/quotes/saved`)
+### Saved Quotes (`/quotes/saved`)
 
-- Listagem com filtro por status (rascunho, em análise, emitida, cancelada)
-- Busca livre por tomador ou número
-- Ações contextuais por status: continuar rascunho, acompanhar análise, ver apólice, recotar
-- Preview detalhado em modal com exportação em PDF
+- List with filter by status (draft, under review, issued, cancelled)
+- Free-text search by policyholder or number
+- Context actions by status: continue draft, track review, view policy, re-quote
+- Detailed preview modal with PDF export
 
-### Histórico (`/quotes/history`)
+### History (`/quotes/history`)
 
-- Histórico de cotações agrupado por produto
-- Detalhe em modal com timeline de status e dados financeiros
+- Quote history grouped by product
+- Detail modal with status timeline and financial data
 
-### Apólices (`/policies`)
+### Policies (`/policies`)
 
-- Tabela de apólices com busca e filtro por status (vigente, vencida, cancelada)
-- Modal de detalhe com renovação integrada e download de PDF
-- Alerta contextual para apólices vencidas e canceladas
+- Policy table with search and filter by status (active, expired, cancelled)
+- Detail modal with integrated renewal and PDF download
+- Contextual alert for expired and cancelled policies
 
-### Tomadores (`/policyholders`)
+### Policyholders (`/policyholders`)
 
-- CRUD de tomadores com razão social, CNPJ, contato e endereço
-- Drawer de detalhe com abas: informações, cotações vinculadas e apólices
-- Gráfico de distribuição de status de cotações por tomador
-- Cadastro rápido via modal inline
+- Policyholder CRUD with company name, CNPJ, contact, and address
+- Detail drawer with tabs: info, linked quotes, and policies
+- Quote status distribution chart per policyholder
+- Quick registration via inline modal
 
-### Relatórios (`/reports`)
+### Reports (`/reports`)
 
-- KPIs de período: cotações, conversão, prêmio emitido e comissão estimada
-- Gráfico de performance mensal (Chart.js — linha)
-- Detalhamento mensal em tabela
-- Distribuição de cotações por produto
-- Histórico de relatórios gerados com exportação e paginação
+- Period KPIs: quotes, conversion, issued premium, and estimated commission
+- Monthly performance chart (Chart.js — line)
+- Monthly breakdown table
+- Quote distribution by product
+- Generated report history with export and pagination
 
-### Seções de Produção (`/production-sections`)
+### Production Sections (`/production-sections`)
 
-- Estrutura preparada para gestão de fluxos operacionais
+- Structure ready for operational workflow management
 
-### Perfil (`/profile`)
+### Profile (`/profile`)
 
-- Aba **Dados pessoais**: nome, CRB, bio e endereço
-- Aba **Segurança**: troca de senha com medidor de força, 2FA e gestão de sessões
-- Aba **Preferências**: idioma, tema (claro/escuro/sistema) e configurações de notificações
+- **Personal info** tab: name, CRB, bio, and address
+- **Security** tab: password change with strength meter, 2FA, and session management
+- **Preferences** tab: language, theme (light/dark/system), and notification settings
 
 ---
 
-## Arquitetura
+## Architecture
 
 ```
-├── app/                          # srcDir do Nuxt 4
+├── app/                          # Nuxt 4 srcDir
 │   ├── components/
-│   │   ├── App*.vue              # Genéricos reutilizáveis (AppDrawer, AppConfirmModal…)
-│   │   ├── cotation/             # Etapas e stepper do fluxo de cotação
-│   │   ├── policies/             # Modal de detalhe de apólice
-│   │   ├── policyholders/        # Drawer de tomador e gráficos
-│   │   ├── quotes/               # Modais de prévia, detalhe e pagamento
-│   │   └── reports/              # Gráfico de performance
+│   │   ├── App*.vue              # Reusable generics (AppDrawer, AppConfirmModal…)
+│   │   ├── cotation/             # Quote flow steps and stepper
+│   │   ├── policies/             # Policy detail modal
+│   │   ├── policyholders/        # Policyholder drawer and charts
+│   │   ├── quotes/               # Preview, detail, and payment modals
+│   │   └── reports/              # Performance chart
 │   │
 │   ├── composables/
-│   │   ├── useCotationFlow.ts    # Estado global do fluxo de cotação (stepper + form)
-│   │   ├── useDashboard.ts       # Métricas e action cards
-│   │   ├── useHistorico.ts       # Histórico de cotações
-│   │   ├── useLoadingDelay.ts    # Skeleton delay controlado
-│   │   ├── useNotifications.ts   # Fila de notificações com mark-as-read
-│   │   ├── usePolicies.ts        # Dados e constantes de apólices
-│   │   ├── usePolicyholders.ts   # CRUD de tomadores
-│   │   ├── useProducts.ts        # Catálogo de produtos e modalidades
-│   │   ├── useReports.ts         # Dados e filtros de relatórios
-│   │   └── useSavedQuotes.ts     # Cotações salvas com filtro e paginação
+│   │   ├── useCotationFlow.ts    # Global quote flow state (stepper + form)
+│   │   ├── useDashboard.ts       # Metrics and action cards
+│   │   ├── useHistorico.ts       # Quote history
+│   │   ├── useLoadingDelay.ts    # Controlled skeleton delay
+│   │   ├── useNotifications.ts   # Notification queue with mark-as-read
+│   │   ├── usePolicies.ts        # Policy data and constants
+│   │   ├── usePolicyholders.ts   # Policyholder CRUD
+│   │   ├── useProducts.ts        # Product and modality catalog
+│   │   ├── useReports.ts         # Report data and filters
+│   │   └── useSavedQuotes.ts     # Saved quotes with filter and pagination
 │   │
 │   ├── layouts/
-│   │   └── dashboard.vue         # Layout base com TheHeader
+│   │   └── dashboard.vue         # Base layout with TheHeader
 │   │
 │   ├── pages/
 │   │   ├── index.vue             # Login
-│   │   ├── forgot.vue            # Recuperação de senha
-│   │   ├── home.vue              # Dashboard principal
-│   │   ├── policies.vue          # Gestão de apólices
-│   │   ├── policyholders/        # Tomadores + cadastro
+│   │   ├── forgot.vue            # Password recovery
+│   │   ├── home.vue              # Main dashboard
+│   │   ├── policies.vue          # Policy management
+│   │   ├── policyholders/        # Policyholders + create
 │   │   ├── quotes/               # create · history · saved · select-product
-│   │   ├── reports.vue           # Relatórios e análises
+│   │   ├── reports.vue           # Reports and analytics
 │   │   ├── production-sections.vue
 │   │   ├── cotation-form.vue
 │   │   └── profile.vue
 │   │
 │   ├── services/
-│   │   └── api.ts                # Cliente HTTP genérico e tipado (fetch wrapper)
+│   │   └── api.ts                # Generic typed HTTP client (fetch wrapper)
 │   │
 │   ├── types/
 │   │   ├── cotation.ts           # CotacaoFormData, Apolice, Tomador, StatusCotacao…
@@ -144,91 +139,91 @@ Fluxo guiado em **4 etapas** com stepper visual:
 │   │   └── savedQuote.ts         # SavedQuote, SavedQuoteStatus
 │   │
 │   └── utils/
-│       └── masks.ts              # Formatações (moeda, CNPJ, CEP, telefone)
+│       └── masks.ts              # Formatters (currency, CNPJ, ZIP, phone)
 │
 ├── i18n/
 │   └── locales/
-│       ├── en.json               # Inglês
-│       └── pt.json               # Português do Brasil (padrão)
+│       ├── en.json               # English
+│       └── pt.json               # Brazilian Portuguese (default)
 │
 ├── nuxt.config.ts
 └── package.json
 ```
 
-### Decisões de arquitetura
+### Architecture decisions
 
-**Estado com composables em escopo de módulo**
-O estado compartilhado (cotações salvas, notificações, fluxo de cotação) é gerenciado via `ref()` declarados no topo do arquivo do composable — fora da função exportada. Isso cria um singleton por módulo sem necessidade de Pinia para casos simples.
+**Module-scoped composable state**
+Shared state (saved quotes, notifications, quote flow) is managed via `ref()` declared at the top of the composable file — outside the exported function. This creates a per-module singleton without needing Pinia for simple cases.
 
-**Nomenclatura automática de componentes**
-O Nuxt auto-importa componentes usando o diretório como prefixo. `app/components/quotes/PaymentMethodsModal.vue` é usado como `<QuotesPaymentMethodsModal>`. Componentes genéricos com prefixo `App` ficam na raiz de `components/`.
+**Automatic component naming**
+Nuxt auto-imports components using the directory as a prefix. `app/components/quotes/PaymentMethodsModal.vue` is used as `<QuotesPaymentMethodsModal>`. Generic components with the `App` prefix live at the root of `components/`.
 
-**Tipos centralizados em `app/types/`**
-Interfaces e tipos são definidos uma única vez em `app/types/` e importados onde necessário — composables, páginas e componentes. Composables não re-exportam tipos; os consumidores importam diretamente da fonte.
+**Centralized types in `app/types/`**
+Interfaces and types are defined once in `app/types/` and imported where needed — composables, pages, and components. Composables do not re-export types; consumers import directly from the source.
 
-**Resolução do i18n**
-`@nuxtjs/i18n v10` resolve `langDir` relativo a `<rootDir>/i18n/` (o `restructureDir`). Os arquivos de locale ficam em `i18n/locales/`, fora do `srcDir`.
-
----
-
-## Temas e i18n
-
-- **Dark mode** nativo via `@nuxt/ui` com `colorMode.preference` (claro / escuro / sistema)
-- **Idiomas**: Português (`pt`) e Inglês (`en`), alternáveis em tempo real via `setLocale()`
-- Strings dinâmicas com interpolação (`{value}`), listas via `tm()` e e-mails escapados com `{'@'}` para evitar conflito com a sintaxe de linked messages do vue-i18n
+**i18n resolution**
+`@nuxtjs/i18n v10` resolves `langDir` relative to `<rootDir>/i18n/` (the `restructureDir`). Locale files live in `i18n/locales/`, outside the `srcDir`.
 
 ---
 
-## Rotas
+## Themes & i18n
 
-| Rota                     | Página                | Layout    |
+- Native **dark mode** via `@nuxt/ui` with `colorMode.preference` (light / dark / system)
+- **Languages**: Portuguese (`pt`) and English (`en`), switchable at runtime via `setLocale()`
+- Dynamic strings with interpolation (`{value}`), lists via `tm()`, and emails escaped with `{'@'}` to avoid conflict with vue-i18n linked message syntax
+
+---
+
+## Routes
+
+| Route                    | Page                  | Layout    |
 | ------------------------ | --------------------- | --------- |
-| `/`                      | Login                 | padrão    |
-| `/forgot`                | Recuperação de senha  | padrão    |
+| `/`                      | Login                 | default   |
+| `/forgot`                | Password recovery     | default   |
 | `/home`                  | Dashboard             | dashboard |
-| `/quotes/select-product` | Selecionar produto    | dashboard |
-| `/quotes/create`         | Fluxo de cotação      | dashboard |
-| `/quotes/saved`          | Cotações salvas       | dashboard |
-| `/quotes/history`        | Histórico             | dashboard |
-| `/policies`              | Apólices              | dashboard |
-| `/policyholders`         | Tomadores             | dashboard |
-| `/policyholders/create`  | Cadastrar tomador     | dashboard |
-| `/reports`               | Relatórios            | dashboard |
-| `/production-sections`   | Seções de produção    | dashboard |
-| `/cotation-form`         | Formulário de cotação | dashboard |
-| `/profile`               | Perfil do usuário     | dashboard |
+| `/quotes/select-product` | Select product        | dashboard |
+| `/quotes/create`         | Quote flow            | dashboard |
+| `/quotes/saved`          | Saved quotes          | dashboard |
+| `/quotes/history`        | History               | dashboard |
+| `/policies`              | Policies              | dashboard |
+| `/policyholders`         | Policyholders         | dashboard |
+| `/policyholders/create`  | Create policyholder   | dashboard |
+| `/reports`               | Reports               | dashboard |
+| `/production-sections`   | Production sections   | dashboard |
+| `/cotation-form`         | Cotation form         | dashboard |
+| `/profile`               | User profile          | dashboard |
 
 ---
 
-## Começando
+## Getting Started
 
-### Pré-requisitos
+### Prerequisites
 
 - Node.js ≥ 20
 - pnpm ≥ 9
 
-### Instalação
+### Install
 
 ```bash
 pnpm install
 ```
 
-### Desenvolvimento
+### Development
 
 ```bash
 pnpm dev
 ```
 
-Acesse [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000).
 
-### Build de produção
+### Production build
 
 ```bash
 pnpm build
 pnpm preview
 ```
 
-### Verificação de tipos
+### Type check
 
 ```bash
 pnpm typecheck
@@ -240,9 +235,8 @@ pnpm typecheck
 pnpm lint
 ```
 
-### Testes
+### Tests
 
 ```bash
 pnpm test
 ```
----
