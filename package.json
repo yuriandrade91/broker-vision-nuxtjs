@@ -8,19 +8,30 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.108",
     "@iconify-json/simple-icons": "^1.2.83",
     "@nuxt/ui": "^4.7.1",
+    "@nuxtjs/i18n": "^10.4.0",
+    "chart.js": "^4.5.1",
     "nuxt": "^4.4.6",
-    "tailwindcss": "^4.3.0"
+    "pinia": "^2.0.39",
+    "tailwindcss": "^4.3.0",
+    "vue-chartjs": "^5.3.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
+    "@types/jest": "^29.5.5",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/test-utils": "^2.0.0-rc.27",
     "eslint": "^10.4.0",
+    "jsdom": "^29.1.1",
     "typescript": "^6.0.3",
+    "vitest": "^1.0.0",
+    "vue": "^3.5.34",
     "vue-tsc": "^3.3.0"
   },
   "packageManager": "pnpm@11.1.3"
