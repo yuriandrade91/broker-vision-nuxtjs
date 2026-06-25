@@ -1,0 +1,942 @@
+{
+  "nav": {
+    "policies": "Policies",
+    "quotes": "Quotes",
+    "newQuote": "New Quote",
+    "newQuoteDesc": "Start a new insurance quote",
+    "savedQuotes": "Saved Quotes",
+    "savedQuotesDesc": "Drafts, under review and issued",
+    "history": "History",
+    "historyDesc": "All quotes made",
+    "policyholders": "Policyholders",
+    "reports": "Reports",
+    "dashboard": "Dashboard",
+    "myProfile": "My Profile",
+    "logout": "Sign Out",
+    "startQuote": "Start Quote"
+  },
+  "login": {
+    "appName": "Insurance Dashboard",
+    "appSubtitle": "Manage quotes, policies and reports quickly and securely. Sign in to access the dashboard.",
+    "signIn": "Sign In",
+    "username": "Username",
+    "password": "Password",
+    "remember": "Remember me",
+    "forgotPassword": "Forgot password",
+    "submitting": "Signing in...",
+    "copyright": "© {year} • BrokerVision",
+    "errors": {
+      "usernameRequired": "Username is required.",
+      "usernameMinLength": "Minimum 3 characters.",
+      "passwordRequired": "Password is required.",
+      "passwordMinLength": "Password must be at least 6 characters."
+    }
+  },
+  "forgot": {
+    "pageTitle": "Recover Password - BrokerVision",
+    "title": "Forgot Password",
+    "subtitle": "Enter your email and we'll send you recovery instructions.",
+    "email": "Email",
+    "send": "Send Instructions",
+    "sending": "Sending...",
+    "backToLogin": "Back to login",
+    "emailSent": "Email sent!",
+    "checkInbox": "Check your inbox at {email}.",
+    "backToLoginBtn": "Back to login",
+    "errors": {
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Invalid email."
+    }
+  },
+  "dashboard": {
+    "pageTitle": "Insurance Dashboard - BrokerVision",
+    "breadcrumb": "My Insurance Dashboard",
+    "title": "Insurance Dashboard",
+    "subtitle": "Manage your quotes, policies and track your indicators in real time.",
+    "today": "Today"
+  },
+  "actionCards": {
+    "newQuote": {
+      "title": "New Quote",
+      "description": "Start a new guarantee insurance quote in a few steps.",
+      "cta": "Start Quote"
+    },
+    "history": {
+      "title": "History",
+      "description": "View the history of quotes recorded by product.",
+      "cta": "View History"
+    },
+    "savedQuotes": {
+      "title": "Saved Quotes",
+      "description": "Continue editing your ongoing quotes or review proposals.",
+      "cta": "View Quotes"
+    },
+    "policies": {
+      "title": "Policies",
+      "description": "Consult all issued policies and track their status.",
+      "cta": "Consult"
+    }
+  },
+  "metrics": {
+    "activeQuotes": {
+      "label": "Active Quotes",
+      "subtitle": "In progress in the system"
+    },
+    "activePolicies": {
+      "label": "Active Policies",
+      "subtitle": "Total active policies"
+    },
+    "totalPremium": {
+      "label": "Total Premium (month)",
+      "subtitle": "Volume of issued premiums"
+    }
+  },
+  "policies": {
+    "pageTitle": "Policies - BrokerVision",
+    "category": "Portfolio",
+    "title": "Policies",
+    "description": "Manage and track all issued policies",
+    "newQuote": "New quote",
+    "stats": {
+      "total": "Total",
+      "issuedPolicies": "issued policies",
+      "active": "Active",
+      "activeCoverage": "in active coverage",
+      "totalPremium": "Total Premium",
+      "activePortfolio": "active portfolio"
+    },
+    "search": "Search policy, policyholder...",
+    "table": {
+      "policy": "Policy",
+      "policyholder": "Policyholder",
+      "productModality": "Product / Modality",
+      "validity": "Validity",
+      "premium": "Premium",
+      "status": "Status"
+    },
+    "empty": "No policies found with the applied filters.",
+    "showing": "Showing {from}–{to} of {total} policies",
+    "status": {
+      "vigente": "Active",
+      "vencida": "Expired",
+      "cancelada": "Cancelled"
+    }
+  },
+  "policyholders": {
+    "pageTitle": "Policyholders - BrokerVision",
+    "category": "Portfolio",
+    "title": "Policyholders",
+    "description": "Companies and individuals that take out insurance",
+    "register": "Register policyholder",
+    "stats": {
+      "label": "Policyholders",
+      "registered": "registered",
+      "quotesLabel": "Quotes",
+      "totalQuotes": "total made",
+      "policiesLabel": "Policies",
+      "active": "active"
+    },
+    "search": "Search by name, CNPJ or email...",
+    "view": "View",
+    "empty": "No policyholders found with the applied search.",
+    "showing": "Showing {from}–{to} of {total} policyholders"
+  },
+  "history": {
+    "pageTitle": "Quotes History - BrokerVision",
+    "title": "Quotes History",
+    "description": "View your quotes grouped by product",
+    "newQuote": "New quote",
+    "all": "All",
+    "search": "Search by number or policyholder...",
+    "columns": {
+      "number": "Number",
+      "policyholder": "Policyholder",
+      "value": "Value",
+      "date": "Date"
+    },
+    "quotesCount": "quote(s)",
+    "empty": {
+      "title": "No quotes found",
+      "subtitle": "Try adjusting the filters or search term."
+    },
+    "clearFilters": "Clear filters",
+    "status": {
+      "todos": "All",
+      "emitida": "Issued",
+      "emitidas": "Issued",
+      "em-analise": "In Review",
+      "em-analises": "In Review",
+      "registrada": "Registered",
+      "registradas": "Registered",
+      "cancelada": "Cancelled",
+      "canceladas": "Cancelled"
+    }
+  },
+  "savedQuotes": {
+    "pageTitle": "Quotes - BrokerVision",
+    "category": "Quotes",
+    "title": "Quotes",
+    "description": "Drafts, quotes under review and issued policies",
+    "newQuote": "New quote",
+    "tabs": {
+      "all": "All",
+      "draft": "Draft",
+      "inReview": "Under Review",
+      "issued": "Issued",
+      "cancelled": "Cancelled"
+    },
+    "search": "Search by policyholder, number...",
+    "updatedAt": "Updated on {date}",
+    "step": "Step {step}/4 · {label}",
+    "stepLabels": {
+      "1": "Quote",
+      "2": "Insured",
+      "3": "Risk",
+      "4": "Payment"
+    },
+    "status": {
+      "rascunho": "Draft",
+      "em-analise": "Under Review",
+      "emitida": "Issued",
+      "cancelada": "Cancelled"
+    },
+    "preview": "Preview",
+    "continue": "Continue",
+    "follow": "Follow",
+    "stopFollowing": "Stop Following",
+    "viewPolicy": "View Policy",
+    "pdf": "PDF",
+    "requote": "Requote",
+    "empty": {
+      "title": "No quotes found",
+      "subtitle": "Try adjusting the filters or search term."
+    },
+    "clearFilters": "Clear filters",
+    "deleteModal": {
+      "title": "Remove quote",
+      "description": "Are you sure you want to remove this item? This action cannot be undone.",
+      "confirm": "Remove"
+    },
+    "toast": {
+      "deleted": "Quote removed",
+      "deletedDesc": "The item was removed from the list.",
+      "following": "Following activated",
+      "followingDesc": "Quote {number} is marked as followed. Response within 2 business days.",
+      "unfollowed": "Following removed",
+      "unfollowedDesc": "You stopped following quote {number}.",
+      "downloaded": "Download complete",
+      "downloadedDesc": "PDF for quote {number} downloaded successfully."
+    },
+    "showing": "Showing {from}–{to} of {total} quotes"
+  },
+  "selectProduct": {
+    "pageTitle": "Product Selection - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "My Insurance Dashboard",
+      "selection": "Product Selection",
+      "quote": "Quote"
+    },
+    "title": "Product Selection",
+    "description": "Choose the type of insurance to quote",
+    "selectOption": "Select one of the options below to start your quote",
+    "searchLabel": "Search Product",
+    "searchPlaceholder": "Type the insurance name, coverage or modality...",
+    "searchBtn": "Search",
+    "empty": "No product found for \"{search}\""
+  },
+  "reports": {
+    "pageTitle": "Reports - BrokerVision",
+    "category": "Analysis",
+    "title": "Reports",
+    "description": "Indicators and portfolio performance",
+    "export": "Export report",
+    "kpis": {
+      "quotesMonth": "Quotes (month)",
+      "conversionRate": "Conversion rate",
+      "issuedPremium": "Issued premium",
+      "generatedCommission": "Generated commission",
+      "estimated": "estimated 25%",
+      "deltaPercent": "{sign}{value}% vs. prev. month",
+      "deltaPp": "{sign}{value}pp vs. prev. month"
+    },
+    "performance": {
+      "title": "Monthly Performance",
+      "subtitle": "Quotes, issuances and premium by month",
+      "loading": "Loading chart..."
+    },
+    "periods": {
+      "3m": "Last 3 months",
+      "6m": "Last 6 months",
+      "12m": "Last 12 months"
+    },
+    "monthly": {
+      "title": "Monthly Breakdown",
+      "month": "Month",
+      "quotes": "Quotes",
+      "issued": "Issued",
+      "conversion": "Conversion",
+      "premium": "Premium"
+    },
+    "byProduct": "Quotes by product",
+    "quotesCount": "{count} quotes",
+    "generated": {
+      "title": "Generated Reports",
+      "generatedOn": "Generated on {date}",
+      "generateNew": "Generate new"
+    },
+    "toast": {
+      "generateTitle": "Report generated",
+      "generateDesc": "New report added to the list.",
+      "exportTitle": "Exporting report",
+      "exportDesc": "Report \"{name}\" will be available for download shortly.",
+      "exportDescFull": "Full report will be available for download shortly."
+    }
+  },
+  "productionSections": {
+    "pageTitle": "Production Sections - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "My Insurance Dashboard",
+      "title": "Production Sections"
+    },
+    "category": "Operations",
+    "title": "Production Sections",
+    "description": "Manage production sections and workflows",
+    "wip": {
+      "title": "Under development",
+      "subtitle": "API integration will be available soon."
+    },
+    "backToDashboard": "Back to dashboard"
+  },
+  "profile": {
+    "pageTitle": "My Profile - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "My Insurance Dashboard",
+      "title": "My Profile"
+    },
+    "title": "My Profile",
+    "description": "Manage your personal information and preferences",
+    "role": "Insurance Broker",
+    "memberSince": "Member since",
+    "quotes": "Quotes",
+    "policies": "Active policies",
+    "conversion": "Conversion",
+    "tabs": {
+      "personal": "Personal Info",
+      "security": "Security",
+      "preferences": "Preferences"
+    },
+    "personal": {
+      "sectionTitle": "Personal Data",
+      "sectionDesc": "Update your personal information",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "crb": "CRB (Broker Registry)",
+      "bio": "About",
+      "bioPlaceholder": "Tell us a bit about yourself...",
+      "sectionAddress": "Address",
+      "sectionAddressDesc": "Your registered address",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "zip": "ZIP code",
+      "save": "Save changes",
+      "toast": {
+        "title": "Profile updated",
+        "desc": "Your information was saved successfully."
+      }
+    },
+    "security": {
+      "sectionTitle": "Change Password",
+      "sectionDesc": "Keep your account secure",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "passwordStrength": "Password strength",
+      "passwordWeak": "Weak",
+      "passwordMedium": "Medium",
+      "passwordStrong": "Strong",
+      "savePassword": "Update password",
+      "sectionSessions": "Active Sessions",
+      "sectionSessionsDesc": "Devices connected to your account",
+      "thisDevice": "This device",
+      "revokeAll": "Sign out all other devices",
+      "twoFactor": "Two-factor authentication",
+      "twoFactorDesc": "Extra security layer for your account",
+      "twoFactorEnabled": "Enabled",
+      "twoFactorDisabled": "Disabled",
+      "enable": "Enable",
+      "toast": {
+        "title": "Password updated",
+        "desc": "Your password was changed successfully."
+      }
+    },
+    "preferences": {
+      "sectionLanguage": "Language",
+      "sectionLanguageDesc": "Application display language",
+      "sectionTheme": "Theme",
+      "sectionThemeDesc": "Interface color scheme",
+      "themeLight": "Light",
+      "themeDark": "Dark",
+      "themeSystem": "System",
+      "sectionNotifications": "Notifications",
+      "sectionNotificationsDesc": "Choose which notifications you want to receive",
+      "notifQuotes": "Quote status updates",
+      "notifQuotesDesc": "Receive alerts when a quote changes status",
+      "notifPolicies": "Policy renewals",
+      "notifPoliciesDesc": "Reminders for upcoming policy renewals",
+      "notifReports": "Monthly reports",
+      "notifReportsDesc": "Monthly performance summary",
+      "notifSystem": "System updates",
+      "notifSystemDesc": "Platform news and new features",
+      "save": "Save preferences",
+      "toast": {
+        "title": "Preferences saved",
+        "desc": "Your preferences were updated successfully."
+      }
+    },
+    "wip": {
+      "title": "Under development",
+      "subtitle": "Profile settings will be available soon."
+    },
+    "backToDashboard": "Back to dashboard"
+  },
+  "createPolicyholder": {
+    "pageTitle": "Register Policyholder - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "My Insurance Dashboard",
+      "policyholders": "Policyholders",
+      "create": "Register policyholder"
+    },
+    "category": "Portfolio",
+    "title": "Register Policyholder",
+    "description": "Fill in the data to add a new policyholder to the portfolio",
+    "sections": {
+      "identification": "Identification",
+      "contact": "Contact",
+      "address": "Address",
+      "notes": "Notes"
+    },
+    "fields": {
+      "companyName": "Company Name",
+      "cnpj": "CNPJ",
+      "website": "Website",
+      "email": "Email",
+      "phone": "Phone",
+      "contactPerson": "Contact Person",
+      "position": "Position",
+      "zipCode": "Zip Code",
+      "state": "State",
+      "address": "Address",
+      "city": "City",
+      "notes": "Notes"
+    },
+    "placeholders": {
+      "companyName": "Full name or company name",
+      "cnpj": "00.000.000/0000-00",
+      "website": "www.company.com",
+      "email": "contact{'@'}company.com",
+      "phone": "(00) 00000-0000",
+      "contactPerson": "Contact name",
+      "position": "e.g. Financial Manager",
+      "zipCode": "00000-000",
+      "state": "ST",
+      "address": "Street, number, complement",
+      "city": "City",
+      "notes": "Relevant information about the policyholder (preferences, restrictions, history)..."
+    },
+    "errors": {
+      "companyNameRequired": "Company name is required",
+      "cnpjRequired": "CNPJ is required",
+      "cnpjInvalid": "Invalid CNPJ",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "phoneRequired": "Phone is required"
+    },
+    "back": "Back",
+    "cancel": "Cancel",
+    "submit": "Register policyholder",
+    "toast": {
+      "title": "Policyholder registered",
+      "description": "{name} was added successfully."
+    }
+  },
+  "cotation": {
+    "steps": {
+      "1": { "title": "Quote", "subtitle": "Initial data" },
+      "2": { "title": "Insured", "subtitle": "Personal information" },
+      "3": { "title": "Risk", "subtitle": "Insurance details" },
+      "4": { "title": "Payment", "subtitle": "Finalization" }
+    },
+    "step1": {
+      "title": "Quote",
+      "subtitle": "Fill in the basic guarantee insurance quote data",
+      "searchPolicyholder": "Search policyholder",
+      "searchPlaceholder": "Type the name or CNPJ (min. 3 characters)...",
+      "register": "Register",
+      "policyholderSelected": "Policyholder selected — name and CNPJ filled in automatically",
+      "minChars": "Type at least 3 characters to search",
+      "policyholderName": "Policyholder Name",
+      "policyholderCNPJ": "Policyholder CNPJ",
+      "product": "Product",
+      "modality": "Modality",
+      "debtIncrease": "Debt increase",
+      "totalIS": "Total IS Value",
+      "startDate": "Coverage Start Date",
+      "endDate": "Coverage End Date",
+      "rate": "Rate",
+      "worsening": "Worsening",
+      "commission": "Commission",
+      "next": "Next: Insured",
+      "saveDraft": "Save draft",
+      "back": "Back",
+      "noResults": "No policyholder found for \"{query}\"",
+      "selectProduct": "Select the product",
+      "selectModality": "Select the modality",
+      "placeholders": {
+        "fullName": "Full Name",
+        "cnpj": "00.000.000/0000-00",
+        "acrescimo": "0",
+        "valorIS": "R$ 0,00",
+        "date": "DD/MM/YYYY",
+        "agravamento": "Enter value"
+      },
+      "toast": {
+        "draftSaved": "Draft saved",
+        "draftSavedDesc": "Quote {number} saved. Continue where you left off whenever you want."
+      }
+    },
+    "step2": {
+      "title": "Insured",
+      "subtitle": "Enter the data of the insured party",
+      "companyName": "Company Name / Name",
+      "cnpjCpf": "CNPJ / CPF",
+      "contactEmail": "Contact Email",
+      "phone": "Phone",
+      "zipCode": "Zip Code",
+      "cityState": "City / State",
+      "fullAddress": "Full Address",
+      "placeholders": {
+        "insuredName": "Insured name",
+        "cnpjCpf": "00.000.000/0000-00",
+        "email": "contact{'@'}company.com",
+        "phone": "(00) 00000-0000",
+        "zipCode": "00000-000",
+        "cityState": "City — ST",
+        "address": "Street, number, complement, neighborhood"
+      },
+      "next": "Next: Risk",
+      "saveDraft": "Save draft",
+      "back": "Back",
+      "toast": {
+        "draftSaved": "Draft saved",
+        "draftSavedDesc": "Quote {number} saved. Continue where you left off whenever you want."
+      }
+    },
+    "step3": {
+      "title": "Risk",
+      "subtitle": "Describe the object and details of the risk to be guaranteed",
+      "contractObject": "Contract object",
+      "processNumber": "Process / contract number",
+      "insuredValue": "Insured value (IS)",
+      "riskLocation": "Risk location",
+      "startDate": "Coverage start",
+      "endDate": "Coverage end",
+      "additionalNotes": "Additional notes",
+      "placeholders": {
+        "contractObject": "e.g.: Public works execution",
+        "processNumber": "0000000-00.0000.0.00.0000",
+        "insuredValue": "R$ 0,00",
+        "riskLocation": "City — ST",
+        "date": "DD/MM/YYYY",
+        "notes": "Include special conditions, clauses or relevant observations."
+      },
+      "next": "Next: Payment",
+      "saveDraft": "Save draft",
+      "back": "Back",
+      "toast": {
+        "draftSaved": "Draft saved",
+        "draftSavedDesc": "Quote {number} saved. Continue where you left off whenever you want."
+      }
+    },
+    "step4": {
+      "title": "Payment",
+      "subtitle": "Choose the payment method to issue your policy",
+      "paymentMethod": "Payment method",
+      "recommended": "Recommended",
+      "total": "Total to pay",
+      "totalSubtitle": "Premium + IOF + administrative fees",
+      "confirm": "Confirm and issue policy",
+      "back": "Back",
+      "toast": {
+        "issued": "Policy issued successfully!",
+        "issuedDesc": "Quote registered. Redirecting to history."
+      }
+    },
+    "payment": {
+      "boleto": {
+        "label": "Bank Slip",
+        "description": "Due within 5 business days"
+      },
+      "pix": {
+        "label": "PIX",
+        "description": "Instant confirmation"
+      },
+      "cartao": {
+        "label": "Credit Card",
+        "description": "Up to 12 installments interest-free"
+      }
+    },
+    "products": {
+      "garantia": "Guarantee Insurance",
+      "empresarial": "Business Insurance",
+      "vida": "Life Insurance",
+      "garantia_desc": "Guarantees for tenders, contracts and construction works.",
+      "empresarial_desc": "Full protection for commercial and industrial establishments.",
+      "vida_desc": "Financial protection for you and your family.",
+      "garantia_tags_label": "Modalities",
+      "empresarial_tags_label": "Coverages",
+      "vida_tags_label": "Coverages",
+      "garantia_tags": ["Judicial", "Labor", "Customs"],
+      "empresarial_tags": ["Fire", "Theft", "Civil Liability"],
+      "vida_tags": ["Death", "Disability", "Critical Illness"]
+    },
+    "modalities": {
+      "garantia": {
+        "judicial": "Judicial",
+        "trabalhista": "Labor",
+        "aduaneira": "Customs"
+      },
+      "empresarial": {
+        "incendio": "Fire",
+        "roubo": "Theft",
+        "rc": "Civil Liability"
+      },
+      "vida": {
+        "morte": "Death",
+        "invalidez": "Disability",
+        "doencas-graves": "Critical Illness"
+      }
+    },
+    "summary": {
+      "title": "Quote",
+      "summaryTitle": "Quote Summary",
+      "quoteNumber": "Quote No.",
+      "policyholder": "Policyholder",
+      "product": "Product",
+      "modality": "Modality",
+      "premium": "Premium",
+      "commission": "Commission ({percent}%)",
+      "total": "Total",
+      "selectPayment": "Select payment",
+      "viewPaymentMethods": "View payment methods"
+    },
+    "validation": {
+      "policyholderNameRequired": "Policyholder name is required",
+      "cnpjInvalid": "CNPJ must have 14 digits",
+      "productRequired": "Select the product",
+      "modalityRequired": "Select the modality",
+      "totalISRequired": "Enter the total IS value",
+      "dateFormat": "Enter the date in DD/MM/YYYY format",
+      "dateInvalid": "Invalid date",
+      "companyNameRequired": "Company name is required",
+      "documentInvalid": "Enter a valid CNPJ (14 digits) or CPF (11 digits)",
+      "emailInvalid": "Invalid email",
+      "phoneInvalid": "Invalid phone",
+      "zipCodeInvalid": "Invalid zip code",
+      "addressRequired": "Address is required",
+      "contractObjectRequired": "Contract object is required",
+      "processNumberRequired": "Process number is required",
+      "insuredValueRequired": "Insured value is required",
+      "riskLocationRequired": "Risk location is required",
+      "paymentMethodRequired": "Select a payment method"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "empty": "No new notifications",
+    "emptyDesc": "You're all caught up!",
+    "justNow": "Just now"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "edit": "Edit",
+    "noData": "No records found"
+  },
+  "cotationForm": {
+    "pageTitle": "Quote Form - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "My Insurance Dashboard",
+      "title": "Quote Form"
+    },
+    "title": "Quote Form",
+    "description": "Fill in the policyholder and guarantee data",
+    "wip": {
+      "title": "Under development",
+      "subtitle": "API integration will be available soon."
+    },
+    "backToDashboard": "Back to dashboard"
+  },
+  "policyDetail": {
+    "title": "Policy Details",
+    "statusLabels": {
+      "vigente": "Active",
+      "vencida": "Expired",
+      "cancelada": "Cancelled"
+    },
+    "sections": {
+      "product": "Product",
+      "branch": "Branch",
+      "modality": "Modality",
+      "validity": "Validity",
+      "start": "Start",
+      "end": "End",
+      "financial": "Financial breakdown",
+      "netPremium": "Net premium",
+      "iof": "IOF",
+      "totalToPay": "Total to pay"
+    },
+    "renewal": {
+      "badge": "Renewal requested",
+      "doneMessage": "This policy was renewed on {date} and is being processed. New requests cannot be made at this time.",
+      "expiredAlert": "This policy has expired. Click Renew to start the renewal process.",
+      "cancelledAlert": "This policy has been cancelled and has no active coverage."
+    },
+    "toast": {
+      "alreadyRenewedTitle": "Renewal already requested",
+      "alreadyRenewedDesc": "This policy was already renewed on {date}. Please wait for processing.",
+      "renewedTitle": "Renewal initiated",
+      "renewedDesc": "Policy {numero} was forwarded for renewal successfully.",
+      "pdfTitle": "Download complete",
+      "pdfDesc": "PDF of policy {numero} downloaded successfully."
+    },
+    "buttons": {
+      "renew": "Renew policy",
+      "renewalInProgress": "Renewal in progress",
+      "downloadPDF": "Download PDF"
+    }
+  },
+  "tomadorDetail": {
+    "titleView": "Policyholder Details",
+    "titleEdit": "Edit Policyholder",
+    "tabs": {
+      "info": "Information",
+      "quotes": "Quotes",
+      "policies": "Policies"
+    },
+    "stats": {
+      "quotes": "Quotes",
+      "active": "Active",
+      "conversion": "Conversion",
+      "premium": "Premium"
+    },
+    "editFields": {
+      "razaoSocial": "Company name",
+      "cnpjHint": "CNPJ cannot be changed",
+      "phone": "Phone",
+      "responsible": "Responsible",
+      "position": "Position",
+      "zip": "ZIP code",
+      "website": "Website",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "notes": "Notes",
+      "notesPlaceholder": "Relevant information about the policyholder..."
+    },
+    "errors": {
+      "nameRequired": "Company name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "phoneRequired": "Phone is required"
+    },
+    "policyStatus": {
+      "vigente": "Active",
+      "vencida": "Expired",
+      "cancelada": "Cancelled"
+    },
+    "toast": {
+      "updatedTitle": "Policyholder updated",
+      "updatedDesc": "Information saved successfully."
+    },
+    "empty": {
+      "quotes": "No quotes found.",
+      "policies": "No policies found."
+    },
+    "buttons": {
+      "newQuote": "New quote",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save changes"
+    }
+  },
+  "quoteDetail": {
+    "title": "Quote Details",
+    "sections": {
+      "product": "Product",
+      "branch": "Branch",
+      "modality": "Modality",
+      "date": "Date",
+      "financial": "Financial",
+      "valueIS": "IS Value",
+      "premium": "Premium",
+      "iof": "IOF (5.6%)",
+      "totalToPay": "Total to pay",
+      "statusHistory": "Status history"
+    },
+    "steps": {
+      "registered": "Quote registered",
+      "underReview": "Under review",
+      "issued": "Issued",
+      "cancelled": "Cancelled"
+    },
+    "buttons": {
+      "viewPolicy": "View policy",
+      "reQuote": "Re-quote",
+      "pdf": "PDF"
+    },
+    "toast": {
+      "pdfTitle": "Generating PDF",
+      "pdfDesc": "PDF for quote {numero} will be ready shortly."
+    }
+  },
+  "savedPreview": {
+    "titleDraft": "Quote Preview",
+    "titleReview": "Quote Under Review",
+    "titleIssued": "Quote Issued",
+    "titleCancelled": "Quote Cancelled",
+    "steps": {
+      "quote": "Quote",
+      "insured": "Insured",
+      "risk": "Risk",
+      "payment": "Payment"
+    },
+    "statusSteps": {
+      "registered": "Quote registered",
+      "underReview": "Under review",
+      "issued": "Issued",
+      "cancelled": "Cancelled"
+    },
+    "section": {
+      "quote": "Quote",
+      "insured": "Insured",
+      "risk": "Risk"
+    },
+    "fields": {
+      "policyholder": "Policyholder",
+      "cnpj": "CNPJ",
+      "product": "Product",
+      "modality": "Modality",
+      "valueIS": "IS Value",
+      "validity": "Validity",
+      "commission": "Commission",
+      "name": "Name",
+      "cnpjCpf": "CNPJ/CPF",
+      "email": "Email",
+      "phone": "Phone",
+      "city": "City",
+      "object": "Object",
+      "process": "Process",
+      "local": "Location",
+      "riskValidity": "Risk validity"
+    },
+    "tracking": "You are tracking this quote",
+    "empty": "No data filled yet.",
+    "emptyHint": "Continue the quote to view details.",
+    "lastUpdate": "Last update:",
+    "toast": {
+      "pdfTitle": "Download complete",
+      "pdfDesc": "PDF of quote {numero} downloaded successfully."
+    },
+    "buttons": {
+      "continue": "Continue quote",
+      "close": "Close",
+      "track": "Track",
+      "stopTracking": "Stop tracking",
+      "viewPolicy": "View policy",
+      "pdf": "PDF",
+      "reQuote": "Re-quote"
+    }
+  },
+  "paymentModal": {
+    "title": "Payment methods",
+    "description": "Select how the premium will be paid and confirm.",
+    "methods": {
+      "boleto": {
+        "label": "Bank slip",
+        "subtitle": "Due in 5 business days",
+        "badge": "Most used",
+        "features": ["No surcharge", "Clears in 1–2 business days", "Can be paid at any bank"]
+      },
+      "pix": {
+        "label": "PIX",
+        "subtitle": "Instant confirmation",
+        "badge": "Fastest",
+        "features": ["No surcharge", "Available 24h, 7 days a week", "Key sent to policyholder email"]
+      },
+      "cartao": {
+        "label": "Credit card",
+        "subtitle": "Up to 12x interest-free",
+        "features": ["Real-time approval", "Interest-free installments", "Accepts Visa, Mastercard, Elo"]
+      }
+    },
+    "installments": {
+      "label": "Select installments:",
+      "cash": "Cash",
+      "times": "{n}x of {value}"
+    },
+    "financial": {
+      "title": "Premium breakdown",
+      "netPremium": "Net premium",
+      "iof": "IOF",
+      "emission": "Emission fee",
+      "totalToPay": "Total to pay",
+      "installmentLine": "{n}x interest-free",
+      "perMonth": "/ month"
+    },
+    "commission": "Commission ({rate}%)",
+    "warning": "Fill in the quote details to see the premium value and financial breakdown.",
+    "toast": {
+      "title": "Payment method selected",
+      "desc": "{method}",
+      "descInstallments": "{method} in {n}x"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "confirm": "Confirm selection"
+    }
+  },
+  "tomadorModal": {
+    "title": "New Policyholder",
+    "description": "Fill in the basic details to register the policyholder",
+    "fields": {
+      "name": "Name / Company Name",
+      "namePlaceholder": "Ex.: Construtora Alfa LTDA",
+      "nameRequired": "Name is required",
+      "cnpj": "CNPJ",
+      "cnpjPlaceholder": "00.000.000/0000-00",
+      "cnpjRequired": "CNPJ must have 14 digits",
+      "phone": "Phone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "email": "Contact email",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "responsible": "Responsible",
+      "responsiblePlaceholder": "Contact name",
+      "position": "Position",
+      "positionPlaceholder": "Ex.: Financial Manager"
+    },
+    "toast": {
+      "title": "Policyholder registered!",
+      "desc": "{name} added successfully."
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "submit": "Register policyholder"
+    }
+  }
+}

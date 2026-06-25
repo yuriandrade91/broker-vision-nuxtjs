@@ -1,0 +1,942 @@
+{
+  "nav": {
+    "policies": "Apólices",
+    "quotes": "Cotações",
+    "newQuote": "Nova cotação",
+    "newQuoteDesc": "Inicie uma nova cotação de seguro",
+    "savedQuotes": "Cotações salvas",
+    "savedQuotesDesc": "Rascunhos, em análise e emitidas",
+    "history": "Histórico",
+    "historyDesc": "Todas as cotações realizadas",
+    "policyholders": "Tomadores",
+    "reports": "Relatórios",
+    "dashboard": "Painel",
+    "myProfile": "Meu perfil",
+    "logout": "Sair",
+    "startQuote": "Iniciar Cotação"
+  },
+  "login": {
+    "appName": "Painel de Seguros",
+    "appSubtitle": "Gerencie cotações, apólices e relatórios com rapidez e segurança. Entre com sua conta para acessar o painel.",
+    "signIn": "Entrar",
+    "username": "Usuário",
+    "password": "Senha",
+    "remember": "Lembrar",
+    "forgotPassword": "Esqueci a senha",
+    "submitting": "Entrando...",
+    "copyright": "© {year} • BrokerVision",
+    "errors": {
+      "usernameRequired": "Usuário é obrigatório.",
+      "usernameMinLength": "Mínimo 3 caracteres.",
+      "passwordRequired": "Senha é obrigatória.",
+      "passwordMinLength": "Senha deve ter ao menos 6 caracteres."
+    }
+  },
+  "forgot": {
+    "pageTitle": "Recuperar senha - BrokerVision",
+    "title": "Esqueci a senha",
+    "subtitle": "Informe seu e-mail e enviaremos as instruções de recuperação.",
+    "email": "E-mail",
+    "send": "Enviar instruções",
+    "sending": "Enviando...",
+    "backToLogin": "Voltar ao login",
+    "emailSent": "E-mail enviado!",
+    "checkInbox": "Verifique sua caixa de entrada em {email}.",
+    "backToLoginBtn": "Voltar ao login",
+    "errors": {
+      "emailRequired": "E-mail é obrigatório.",
+      "emailInvalid": "E-mail inválido."
+    }
+  },
+  "dashboard": {
+    "pageTitle": "Painel de Seguros - BrokerVision",
+    "breadcrumb": "Meu painel de seguros",
+    "title": "Painel de Seguros",
+    "subtitle": "Gerencie suas cotações, apólices e acompanhe seus indicadores em tempo real.",
+    "today": "Data de hoje"
+  },
+  "actionCards": {
+    "newQuote": {
+      "title": "Nova Cotação",
+      "description": "Inicie uma nova cotação de seguro garantia em poucos passos.",
+      "cta": "Iniciar Cotação"
+    },
+    "history": {
+      "title": "Histórico",
+      "description": "Veja o histórico de cotações registradas por produto.",
+      "cta": "Ver Histórico"
+    },
+    "savedQuotes": {
+      "title": "Cotações Salvas",
+      "description": "Continue editando suas cotações em andamento ou revise propostas.",
+      "cta": "Ver Cotações"
+    },
+    "policies": {
+      "title": "Apólices",
+      "description": "Consulte todas as apólices emitidas e acompanhe seu status.",
+      "cta": "Consultar"
+    }
+  },
+  "metrics": {
+    "activeQuotes": {
+      "label": "Cotações Ativas",
+      "subtitle": "Em andamento no sistema"
+    },
+    "activePolicies": {
+      "label": "Apólices Vigentes",
+      "subtitle": "Total de apólices ativas"
+    },
+    "totalPremium": {
+      "label": "Prêmio Total (mês)",
+      "subtitle": "Volume de prêmios emitidos"
+    }
+  },
+  "policies": {
+    "pageTitle": "Apólices - BrokerVision",
+    "category": "Portfólio",
+    "title": "Apólices",
+    "description": "Gerencie e acompanhe todas as apólices emitidas",
+    "newQuote": "Nova cotação",
+    "stats": {
+      "total": "Total",
+      "issuedPolicies": "apólices emitidas",
+      "active": "Vigentes",
+      "activeCoverage": "em cobertura ativa",
+      "totalPremium": "Prêmio total",
+      "activePortfolio": "carteira ativa"
+    },
+    "search": "Buscar apólice, tomador...",
+    "table": {
+      "policy": "Apólice",
+      "policyholder": "Tomador",
+      "productModality": "Produto / Modalidade",
+      "validity": "Vigência",
+      "premium": "Prêmio",
+      "status": "Status"
+    },
+    "empty": "Nenhuma apólice encontrada com os filtros aplicados.",
+    "showing": "Exibindo {from}–{to} de {total} apólices",
+    "status": {
+      "vigente": "Vigente",
+      "vencida": "Vencida",
+      "cancelada": "Cancelada"
+    }
+  },
+  "policyholders": {
+    "pageTitle": "Tomadores - BrokerVision",
+    "category": "Carteira",
+    "title": "Tomadores",
+    "description": "Empresas e pessoas que contratam seguros",
+    "register": "Cadastrar tomador",
+    "stats": {
+      "label": "Tomadores",
+      "registered": "cadastrados",
+      "quotesLabel": "Cotações",
+      "totalQuotes": "total realizadas",
+      "policiesLabel": "Apólices",
+      "active": "ativas"
+    },
+    "search": "Buscar por nome, CNPJ ou e-mail...",
+    "view": "Ver",
+    "empty": "Nenhum tomador encontrado com a busca aplicada.",
+    "showing": "Exibindo {from}–{to} de {total} tomadores"
+  },
+  "history": {
+    "pageTitle": "Histórico de Cotações - BrokerVision",
+    "title": "Histórico de Cotações",
+    "description": "Visualize suas cotações agrupadas por produto",
+    "newQuote": "Nova cotação",
+    "all": "Todos",
+    "search": "Buscar por número ou tomador...",
+    "columns": {
+      "number": "Número",
+      "policyholder": "Tomador",
+      "value": "Valor",
+      "date": "Data"
+    },
+    "quotesCount": "cotação(ões)",
+    "empty": {
+      "title": "Nenhuma cotação encontrada",
+      "subtitle": "Tente ajustar os filtros ou o termo de busca."
+    },
+    "clearFilters": "Limpar filtros",
+    "status": {
+      "todos": "Todos",
+      "emitida": "Emitida",
+      "emitidas": "Emitidas",
+      "em-analise": "Em análise",
+      "em-analises": "Em análise",
+      "registrada": "Registrada",
+      "registradas": "Registradas",
+      "cancelada": "Cancelada",
+      "canceladas": "Canceladas"
+    }
+  },
+  "savedQuotes": {
+    "pageTitle": "Cotações - BrokerVision",
+    "category": "Cotações",
+    "title": "Cotações",
+    "description": "Rascunhos, cotações em análise e apólices emitidas",
+    "newQuote": "Nova cotação",
+    "tabs": {
+      "all": "Todos",
+      "draft": "Rascunho",
+      "inReview": "Em análise",
+      "issued": "Emitida",
+      "cancelled": "Cancelada"
+    },
+    "search": "Buscar por tomador, número...",
+    "updatedAt": "Atualizado em {date}",
+    "step": "Etapa {step}/4 · {label}",
+    "stepLabels": {
+      "1": "Cotação",
+      "2": "Segurado",
+      "3": "Risco",
+      "4": "Pagamento"
+    },
+    "status": {
+      "rascunho": "Rascunho",
+      "em-analise": "Em análise",
+      "emitida": "Emitida",
+      "cancelada": "Cancelada"
+    },
+    "preview": "Prévia",
+    "continue": "Continuar",
+    "follow": "Acompanhar",
+    "stopFollowing": "Deixar de acompanhar",
+    "viewPolicy": "Ver apólice",
+    "pdf": "PDF",
+    "requote": "Recotar",
+    "empty": {
+      "title": "Nenhuma cotação encontrada",
+      "subtitle": "Tente ajustar os filtros ou o termo de busca."
+    },
+    "clearFilters": "Limpar filtros",
+    "deleteModal": {
+      "title": "Remover cotação",
+      "description": "Tem certeza que deseja remover este item? Esta ação não pode ser desfeita.",
+      "confirm": "Remover"
+    },
+    "toast": {
+      "deleted": "Cotação removida",
+      "deletedDesc": "O item foi removido da lista.",
+      "following": "Acompanhamento ativado",
+      "followingDesc": "A cotação {number} está marcada como acompanhada. Retorno em até 2 dias úteis.",
+      "unfollowed": "Acompanhamento removido",
+      "unfollowedDesc": "Você deixou de acompanhar a cotação {number}.",
+      "downloaded": "Download realizado",
+      "downloadedDesc": "PDF da cotação {number} baixado com sucesso."
+    },
+    "showing": "Exibindo {from}–{to} de {total} cotações"
+  },
+  "selectProduct": {
+    "pageTitle": "Seleção de Produto - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "Meu painel de seguros",
+      "selection": "Seleção de produtos",
+      "quote": "Cotação"
+    },
+    "title": "Seleção de Produto",
+    "description": "Escolha o tipo de seguro que deseja cotar",
+    "selectOption": "Selecione uma das opções abaixo para iniciar sua cotação",
+    "searchLabel": "Buscar Produto",
+    "searchPlaceholder": "Digite o nome do seguro, cobertura ou modalidade...",
+    "searchBtn": "Buscar",
+    "empty": "Nenhum produto encontrado para \"{search}\""
+  },
+  "reports": {
+    "pageTitle": "Relatórios - BrokerVision",
+    "category": "Análise",
+    "title": "Relatórios",
+    "description": "Indicadores e performance do portfolio",
+    "export": "Exportar relatório",
+    "kpis": {
+      "quotesMonth": "Cotações (mês)",
+      "conversionRate": "Taxa conversão",
+      "issuedPremium": "Prêmio emitido",
+      "generatedCommission": "Comissão gerada",
+      "estimated": "estimada 25%",
+      "deltaPercent": "{sign}{value}% vs. mês ant.",
+      "deltaPp": "{sign}{value}pp vs. mês ant."
+    },
+    "performance": {
+      "title": "Performance mensal",
+      "subtitle": "Cotações, emissões e prêmio por mês",
+      "loading": "Carregando gráfico…"
+    },
+    "periods": {
+      "3m": "Últimos 3 meses",
+      "6m": "Últimos 6 meses",
+      "12m": "Últimos 12 meses"
+    },
+    "monthly": {
+      "title": "Detalhamento mensal",
+      "month": "Mês",
+      "quotes": "Cotações",
+      "issued": "Emitidas",
+      "conversion": "Conversão",
+      "premium": "Prêmio"
+    },
+    "byProduct": "Cotações por produto",
+    "quotesCount": "{count} cotações",
+    "generated": {
+      "title": "Relatórios gerados",
+      "generatedOn": "Gerado em {date}",
+      "generateNew": "Gerar novo"
+    },
+    "toast": {
+      "generateTitle": "Relatório gerado",
+      "generateDesc": "Novo relatório adicionado à lista.",
+      "exportTitle": "Exportando relatório",
+      "exportDesc": "Relatório \"{name}\" estará disponível para download em breve.",
+      "exportDescFull": "Relatório completo estará disponível para download em breve."
+    }
+  },
+  "productionSections": {
+    "pageTitle": "Seções de Produção - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "Meu painel de seguros",
+      "title": "Seções de Produção"
+    },
+    "category": "Operações",
+    "title": "Seções de Produção",
+    "description": "Gerencie as seções e fluxos de produção",
+    "wip": {
+      "title": "Em desenvolvimento",
+      "subtitle": "A integração com a API será realizada em breve."
+    },
+    "backToDashboard": "Voltar ao painel"
+  },
+  "profile": {
+    "pageTitle": "Meu Perfil - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "Meu painel de seguros",
+      "title": "Meu Perfil"
+    },
+    "title": "Meu Perfil",
+    "description": "Gerencie suas informações pessoais e preferências",
+    "role": "Corretor de Seguros",
+    "memberSince": "Membro desde",
+    "quotes": "Cotações",
+    "policies": "Apólices ativas",
+    "conversion": "Conversão",
+    "tabs": {
+      "personal": "Dados pessoais",
+      "security": "Segurança",
+      "preferences": "Preferências"
+    },
+    "personal": {
+      "sectionTitle": "Dados pessoais",
+      "sectionDesc": "Atualize suas informações pessoais",
+      "name": "Nome completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "crb": "CRB (Cadastro de Corretor)",
+      "bio": "Sobre",
+      "bioPlaceholder": "Conte um pouco sobre você...",
+      "sectionAddress": "Endereço",
+      "sectionAddressDesc": "Seu endereço de cadastro",
+      "address": "Endereço",
+      "city": "Cidade",
+      "state": "Estado",
+      "zip": "CEP",
+      "save": "Salvar alterações",
+      "toast": {
+        "title": "Perfil atualizado",
+        "desc": "Suas informações foram salvas com sucesso."
+      }
+    },
+    "security": {
+      "sectionTitle": "Alterar senha",
+      "sectionDesc": "Mantenha sua conta segura",
+      "currentPassword": "Senha atual",
+      "newPassword": "Nova senha",
+      "confirmPassword": "Confirmar nova senha",
+      "passwordStrength": "Força da senha",
+      "passwordWeak": "Fraca",
+      "passwordMedium": "Média",
+      "passwordStrong": "Forte",
+      "savePassword": "Atualizar senha",
+      "sectionSessions": "Sessões ativas",
+      "sectionSessionsDesc": "Dispositivos conectados à sua conta",
+      "thisDevice": "Este dispositivo",
+      "revokeAll": "Sair de todos os outros dispositivos",
+      "twoFactor": "Autenticação em dois fatores",
+      "twoFactorDesc": "Camada extra de segurança para sua conta",
+      "twoFactorEnabled": "Ativado",
+      "twoFactorDisabled": "Desativado",
+      "enable": "Ativar",
+      "toast": {
+        "title": "Senha atualizada",
+        "desc": "Sua senha foi alterada com sucesso."
+      }
+    },
+    "preferences": {
+      "sectionLanguage": "Idioma",
+      "sectionLanguageDesc": "Idioma de exibição da aplicação",
+      "sectionTheme": "Tema",
+      "sectionThemeDesc": "Esquema de cores da interface",
+      "themeLight": "Claro",
+      "themeDark": "Escuro",
+      "themeSystem": "Sistema",
+      "sectionNotifications": "Notificações",
+      "sectionNotificationsDesc": "Escolha quais notificações deseja receber",
+      "notifQuotes": "Atualizações de cotações",
+      "notifQuotesDesc": "Receba alertas quando uma cotação mudar de status",
+      "notifPolicies": "Renovações de apólices",
+      "notifPoliciesDesc": "Lembretes de renovações próximas",
+      "notifReports": "Relatórios mensais",
+      "notifReportsDesc": "Resumo de performance mensal",
+      "notifSystem": "Atualizações do sistema",
+      "notifSystemDesc": "Novidades e novas funcionalidades da plataforma",
+      "save": "Salvar preferências",
+      "toast": {
+        "title": "Preferências salvas",
+        "desc": "Suas preferências foram atualizadas com sucesso."
+      }
+    },
+    "wip": {
+      "title": "Em desenvolvimento",
+      "subtitle": "As configurações de perfil estarão disponíveis em breve."
+    },
+    "backToDashboard": "Voltar ao painel"
+  },
+  "createPolicyholder": {
+    "pageTitle": "Cadastrar Tomador - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "Meu painel de seguros",
+      "policyholders": "Tomadores",
+      "create": "Cadastrar tomador"
+    },
+    "category": "Carteira",
+    "title": "Cadastrar Tomador",
+    "description": "Preencha os dados para adicionar um novo tomador à carteira",
+    "sections": {
+      "identification": "Identificação",
+      "contact": "Contato",
+      "address": "Endereço",
+      "notes": "Observações"
+    },
+    "fields": {
+      "companyName": "Razão social",
+      "cnpj": "CNPJ",
+      "website": "Site",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "contactPerson": "Responsável",
+      "position": "Cargo",
+      "zipCode": "CEP",
+      "state": "UF",
+      "address": "Endereço",
+      "city": "Cidade",
+      "notes": "Observações"
+    },
+    "placeholders": {
+      "companyName": "Nome completo ou razão social",
+      "cnpj": "00.000.000/0000-00",
+      "website": "www.empresa.com.br",
+      "email": "contato{'@'}empresa.com.br",
+      "phone": "(00) 00000-0000",
+      "contactPerson": "Nome do contato",
+      "position": "Ex: Gerente Financeiro",
+      "zipCode": "00000-000",
+      "state": "SP",
+      "address": "Rua, número, complemento",
+      "city": "Cidade",
+      "notes": "Informações relevantes sobre o tomador (preferências, restrições, histórico)..."
+    },
+    "errors": {
+      "companyNameRequired": "Razão social é obrigatória",
+      "cnpjRequired": "CNPJ é obrigatório",
+      "cnpjInvalid": "CNPJ inválido",
+      "emailRequired": "E-mail é obrigatório",
+      "emailInvalid": "E-mail inválido",
+      "phoneRequired": "Telefone é obrigatório"
+    },
+    "back": "Voltar",
+    "cancel": "Cancelar",
+    "submit": "Cadastrar tomador",
+    "toast": {
+      "title": "Tomador cadastrado",
+      "description": "{name} foi adicionado com sucesso."
+    }
+  },
+  "cotation": {
+    "steps": {
+      "1": { "title": "Cotação", "subtitle": "Dados iniciais" },
+      "2": { "title": "Segurado", "subtitle": "Informações pessoais" },
+      "3": { "title": "Risco", "subtitle": "Detalhes do seguro" },
+      "4": { "title": "Pagamento", "subtitle": "Finalização" }
+    },
+    "step1": {
+      "title": "Cotação",
+      "subtitle": "Preencha os dados básicos da cotação do seguro garantia",
+      "searchPolicyholder": "Buscar tomador",
+      "searchPlaceholder": "Digite o nome ou CNPJ (mín. 3 caracteres)...",
+      "register": "Cadastrar",
+      "policyholderSelected": "Tomador selecionado — nome e CNPJ preenchidos automaticamente",
+      "minChars": "Digite pelo menos 3 caracteres para buscar",
+      "policyholderName": "Nome do Tomador",
+      "policyholderCNPJ": "CNPJ do Tomador",
+      "product": "Produto",
+      "modality": "Modalidade",
+      "debtIncrease": "Acréscimo sobre o débito",
+      "totalIS": "Valor Total do IS",
+      "startDate": "Data de Início da Vigência",
+      "endDate": "Data de Fim da Vigência",
+      "rate": "Taxa",
+      "worsening": "Agravo",
+      "commission": "Comissão",
+      "next": "Próximo: Segurado",
+      "saveDraft": "Salvar rascunho",
+      "back": "Voltar",
+      "noResults": "Nenhum tomador encontrado para \"{query}\"",
+      "selectProduct": "Selecione o produto",
+      "selectModality": "Selecione a modalidade",
+      "placeholders": {
+        "fullName": "Nome Completo",
+        "cnpj": "00.000.000/0000-00",
+        "acrescimo": "0",
+        "valorIS": "R$ 0,00",
+        "date": "DD/MM/AAAA",
+        "agravamento": "Digite o valor"
+      },
+      "toast": {
+        "draftSaved": "Rascunho salvo",
+        "draftSavedDesc": "Cotação {number} salva. Continue de onde parou quando quiser."
+      }
+    },
+    "step2": {
+      "title": "Segurado",
+      "subtitle": "Informe os dados da parte segurada do contrato",
+      "companyName": "Razão Social / Nome",
+      "cnpjCpf": "CNPJ / CPF",
+      "contactEmail": "E-mail de contato",
+      "phone": "Telefone",
+      "zipCode": "CEP",
+      "cityState": "Cidade / UF",
+      "fullAddress": "Endereço completo",
+      "placeholders": {
+        "insuredName": "Nome do segurado",
+        "cnpjCpf": "00.000.000/0000-00",
+        "email": "contato{'@'}empresa.com.br",
+        "phone": "(00) 00000-0000",
+        "zipCode": "00000-000",
+        "cityState": "Cidade — UF",
+        "address": "Rua, número, complemento, bairro"
+      },
+      "next": "Próximo: Risco",
+      "saveDraft": "Salvar rascunho",
+      "back": "Voltar",
+      "toast": {
+        "draftSaved": "Rascunho salvo",
+        "draftSavedDesc": "Cotação {number} salva. Continue de onde parou quando quiser."
+      }
+    },
+    "step3": {
+      "title": "Risco",
+      "subtitle": "Descreva o objeto e os detalhes do risco a ser garantido",
+      "contractObject": "Objeto do contrato",
+      "processNumber": "Número do processo / contrato",
+      "insuredValue": "Valor segurado (IS)",
+      "riskLocation": "Local do risco",
+      "startDate": "Início da vigência",
+      "endDate": "Fim da vigência",
+      "additionalNotes": "Observações adicionais",
+      "placeholders": {
+        "contractObject": "Ex.: Execução de obra pública",
+        "processNumber": "0000000-00.0000.0.00.0000",
+        "insuredValue": "R$ 0,00",
+        "riskLocation": "Cidade — UF",
+        "date": "DD/MM/AAAA",
+        "notes": "Inclua condições especiais, cláusulas ou observações relevantes."
+      },
+      "next": "Próximo: Pagamento",
+      "saveDraft": "Salvar rascunho",
+      "back": "Voltar",
+      "toast": {
+        "draftSaved": "Rascunho salvo",
+        "draftSavedDesc": "Cotação {number} salva. Continue de onde parou quando quiser."
+      }
+    },
+    "step4": {
+      "title": "Pagamento",
+      "subtitle": "Escolha o método de pagamento para emitir sua apólice",
+      "paymentMethod": "Método de pagamento",
+      "recommended": "Recomendado",
+      "total": "Total a pagar",
+      "totalSubtitle": "Prêmio + IOF + custos administrativos",
+      "confirm": "Confirmar e emitir apólice",
+      "back": "Voltar",
+      "toast": {
+        "issued": "Apólice emitida com sucesso!",
+        "issuedDesc": "Cotação registrada. Redirecionando para o histórico."
+      }
+    },
+    "payment": {
+      "boleto": {
+        "label": "Boleto bancário",
+        "description": "Vencimento em até 5 dias úteis"
+      },
+      "pix": {
+        "label": "PIX",
+        "description": "Confirmação instantânea"
+      },
+      "cartao": {
+        "label": "Cartão de crédito",
+        "description": "Em até 12x sem juros"
+      }
+    },
+    "products": {
+      "garantia": "Seguro Garantia",
+      "empresarial": "Seguro Empresarial",
+      "vida": "Seguro de Vida",
+      "garantia_desc": "Garantias para licitações, contratos e execução de obras.",
+      "empresarial_desc": "Proteção completa para estabelecimentos comerciais e industriais.",
+      "vida_desc": "Proteção financeira para você e sua família.",
+      "garantia_tags_label": "Modalidades",
+      "empresarial_tags_label": "Coberturas",
+      "vida_tags_label": "Coberturas",
+      "garantia_tags": ["Judicial", "Trabalhista", "Aduaneira"],
+      "empresarial_tags": ["Incêndio", "Roubo", "Responsabilidade Civil"],
+      "vida_tags": ["Morte", "Invalidez", "Doenças Graves"]
+    },
+    "modalities": {
+      "garantia": {
+        "judicial": "Judicial",
+        "trabalhista": "Trabalhista",
+        "aduaneira": "Aduaneira"
+      },
+      "empresarial": {
+        "incendio": "Incêndio",
+        "roubo": "Roubo",
+        "rc": "Responsabilidade Civil"
+      },
+      "vida": {
+        "morte": "Morte",
+        "invalidez": "Invalidez",
+        "doencas-graves": "Doenças Graves"
+      }
+    },
+    "summary": {
+      "title": "Cotação",
+      "summaryTitle": "Resumo da cotação",
+      "quoteNumber": "Nº Cotação",
+      "policyholder": "Tomador",
+      "product": "Produto",
+      "modality": "Modalidade",
+      "premium": "Prêmio",
+      "commission": "Comissão ({percent}%)",
+      "total": "Total",
+      "selectPayment": "Selecionar pagamento",
+      "viewPaymentMethods": "Visualizar métodos de pagamento"
+    },
+    "validation": {
+      "policyholderNameRequired": "Nome do tomador é obrigatório",
+      "cnpjInvalid": "CNPJ deve ter 14 dígitos",
+      "productRequired": "Selecione o produto",
+      "modalityRequired": "Selecione a modalidade",
+      "totalISRequired": "Informe o valor total do IS",
+      "dateFormat": "Informe a data no formato DD/MM/AAAA",
+      "dateInvalid": "Data inválida",
+      "companyNameRequired": "Razão social é obrigatória",
+      "documentInvalid": "Informe um CNPJ (14 dígitos) ou CPF (11 dígitos) válido",
+      "emailInvalid": "E-mail inválido",
+      "phoneInvalid": "Telefone inválido",
+      "zipCodeInvalid": "CEP inválido",
+      "addressRequired": "Endereço é obrigatório",
+      "contractObjectRequired": "Objeto do contrato é obrigatório",
+      "processNumberRequired": "Número do processo é obrigatório",
+      "insuredValueRequired": "Valor segurado é obrigatório",
+      "riskLocationRequired": "Local do risco é obrigatório",
+      "paymentMethodRequired": "Selecione um método de pagamento"
+    }
+  },
+  "notifications": {
+    "title": "Notificações",
+    "markAllRead": "Marcar todas como lidas",
+    "empty": "Nenhuma notificação nova",
+    "emptyDesc": "Você está em dia!",
+    "justNow": "Agora mesmo"
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Salvar",
+    "close": "Fechar",
+    "edit": "Editar",
+    "noData": "Nenhum registro encontrado"
+  },
+  "cotationForm": {
+    "pageTitle": "Formulário de Cotação - BrokerVision",
+    "breadcrumb": {
+      "dashboard": "Meu painel de seguros",
+      "title": "Formulário de Cotação"
+    },
+    "title": "Formulário de Cotação",
+    "description": "Preencha os dados do tomador e da garantia",
+    "wip": {
+      "title": "Em desenvolvimento",
+      "subtitle": "A integração com a API será realizada em breve."
+    },
+    "backToDashboard": "Voltar ao painel"
+  },
+  "policyDetail": {
+    "title": "Detalhes da Apólice",
+    "statusLabels": {
+      "vigente": "Vigente",
+      "vencida": "Vencida",
+      "cancelada": "Cancelada"
+    },
+    "sections": {
+      "product": "Produto",
+      "branch": "Ramo",
+      "modality": "Modalidade",
+      "validity": "Vigência",
+      "start": "Início",
+      "end": "Fim",
+      "financial": "Detalhamento financeiro",
+      "netPremium": "Prêmio líquido",
+      "iof": "IOF",
+      "totalToPay": "Total a pagar"
+    },
+    "renewal": {
+      "badge": "Renovação solicitada",
+      "doneMessage": "Esta apólice foi renovada em {date} e está sendo processada. Novos pedidos não podem ser feitos neste momento.",
+      "expiredAlert": "Esta apólice está vencida. Clique em Renovar para iniciar o processo de renovação.",
+      "cancelledAlert": "Esta apólice foi cancelada e não possui cobertura ativa."
+    },
+    "toast": {
+      "alreadyRenewedTitle": "Renovação já solicitada",
+      "alreadyRenewedDesc": "Esta apólice já foi renovada em {date}. Aguarde o processamento.",
+      "renewedTitle": "Renovação iniciada",
+      "renewedDesc": "Apólice {numero} encaminhada para renovação com sucesso.",
+      "pdfTitle": "Download concluído",
+      "pdfDesc": "PDF da apólice {numero} baixado com sucesso."
+    },
+    "buttons": {
+      "renew": "Renovar apólice",
+      "renewalInProgress": "Renovação em andamento",
+      "downloadPDF": "Baixar PDF"
+    }
+  },
+  "tomadorDetail": {
+    "titleView": "Detalhes do Tomador",
+    "titleEdit": "Editar Tomador",
+    "tabs": {
+      "info": "Informações",
+      "quotes": "Cotações",
+      "policies": "Apólices"
+    },
+    "stats": {
+      "quotes": "Cotações",
+      "active": "Ativas",
+      "conversion": "Conversão",
+      "premium": "Prêmio"
+    },
+    "editFields": {
+      "razaoSocial": "Razão social",
+      "cnpjHint": "CNPJ não pode ser alterado",
+      "phone": "Telefone",
+      "responsible": "Responsável",
+      "position": "Cargo",
+      "zip": "CEP",
+      "website": "Site",
+      "address": "Endereço",
+      "city": "Cidade",
+      "state": "Estado",
+      "notes": "Observações",
+      "notesPlaceholder": "Informações relevantes sobre o tomador..."
+    },
+    "errors": {
+      "nameRequired": "Razão social é obrigatória",
+      "emailRequired": "E-mail é obrigatório",
+      "emailInvalid": "E-mail inválido",
+      "phoneRequired": "Telefone é obrigatório"
+    },
+    "policyStatus": {
+      "vigente": "Vigente",
+      "vencida": "Vencida",
+      "cancelada": "Cancelada"
+    },
+    "toast": {
+      "updatedTitle": "Tomador atualizado",
+      "updatedDesc": "Informações salvas com sucesso."
+    },
+    "empty": {
+      "quotes": "Nenhuma cotação encontrada.",
+      "policies": "Nenhuma apólice encontrada."
+    },
+    "buttons": {
+      "newQuote": "Nova cotação",
+      "edit": "Editar",
+      "cancel": "Cancelar",
+      "save": "Salvar alterações"
+    }
+  },
+  "quoteDetail": {
+    "title": "Detalhes da Cotação",
+    "sections": {
+      "product": "Produto",
+      "branch": "Ramo",
+      "modality": "Modalidade",
+      "date": "Data",
+      "financial": "Financeiro",
+      "valueIS": "Valor IS",
+      "premium": "Prêmio",
+      "iof": "IOF (5,6%)",
+      "totalToPay": "Total a pagar",
+      "statusHistory": "Histórico de status"
+    },
+    "steps": {
+      "registered": "Cotação registrada",
+      "underReview": "Em análise",
+      "issued": "Emitida",
+      "cancelled": "Cancelada"
+    },
+    "buttons": {
+      "viewPolicy": "Ver apólice",
+      "reQuote": "Recotar",
+      "pdf": "PDF"
+    },
+    "toast": {
+      "pdfTitle": "Gerando PDF",
+      "pdfDesc": "PDF da cotação {numero} estará pronto em breve."
+    }
+  },
+  "savedPreview": {
+    "titleDraft": "Prévia da Cotação",
+    "titleReview": "Cotação em Análise",
+    "titleIssued": "Cotação Emitida",
+    "titleCancelled": "Cotação Cancelada",
+    "steps": {
+      "quote": "Cotação",
+      "insured": "Segurado",
+      "risk": "Risco",
+      "payment": "Pagamento"
+    },
+    "statusSteps": {
+      "registered": "Cotação registrada",
+      "underReview": "Em análise",
+      "issued": "Emitida",
+      "cancelled": "Cancelada"
+    },
+    "section": {
+      "quote": "Cotação",
+      "insured": "Segurado",
+      "risk": "Risco"
+    },
+    "fields": {
+      "policyholder": "Tomador",
+      "cnpj": "CNPJ",
+      "product": "Produto",
+      "modality": "Modalidade",
+      "valueIS": "Valor IS",
+      "validity": "Vigência",
+      "commission": "Comissão",
+      "name": "Nome",
+      "cnpjCpf": "CNPJ/CPF",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "city": "Cidade",
+      "object": "Objeto",
+      "process": "Processo",
+      "local": "Local",
+      "riskValidity": "Vigência do risco"
+    },
+    "tracking": "Você está acompanhando esta cotação",
+    "empty": "Nenhum dado preenchido ainda.",
+    "emptyHint": "Continue a cotação para visualizar os detalhes.",
+    "lastUpdate": "Última atualização:",
+    "toast": {
+      "pdfTitle": "Download concluído",
+      "pdfDesc": "PDF da cotação {numero} baixado com sucesso."
+    },
+    "buttons": {
+      "continue": "Continuar cotação",
+      "close": "Fechar",
+      "track": "Acompanhar",
+      "stopTracking": "Parar acompanhamento",
+      "viewPolicy": "Ver apólice",
+      "pdf": "PDF",
+      "reQuote": "Recotar"
+    }
+  },
+  "paymentModal": {
+    "title": "Formas de pagamento",
+    "description": "Selecione como o prêmio será pago e confirme.",
+    "methods": {
+      "boleto": {
+        "label": "Boleto bancário",
+        "subtitle": "Vence em 5 dias úteis",
+        "badge": "Mais utilizado",
+        "features": ["Sem acréscimo", "Compensação em 1–2 dias úteis", "Pode ser pago em qualquer banco"]
+      },
+      "pix": {
+        "label": "PIX",
+        "subtitle": "Confirmação instantânea",
+        "badge": "Mais rápido",
+        "features": ["Sem acréscimo", "Disponível 24h, 7 dias por semana", "Chave enviada ao e-mail do tomador"]
+      },
+      "cartao": {
+        "label": "Cartão de crédito",
+        "subtitle": "Até 12x sem juros",
+        "features": ["Aprovação em tempo real", "Parcelamento sem juros", "Aceita Visa, Mastercard, Elo"]
+      }
+    },
+    "installments": {
+      "label": "Selecionar parcelas:",
+      "cash": "À vista",
+      "times": "{n}x de {value}"
+    },
+    "financial": {
+      "title": "Detalhamento do prêmio",
+      "netPremium": "Prêmio líquido",
+      "iof": "IOF",
+      "emission": "Taxa de emissão",
+      "totalToPay": "Total a pagar",
+      "installmentLine": "{n}x sem juros",
+      "perMonth": "/ mês"
+    },
+    "commission": "Comissão ({rate}%)",
+    "warning": "Preencha os dados da cotação para ver o valor do prêmio e o detalhamento financeiro.",
+    "toast": {
+      "title": "Forma de pagamento selecionada",
+      "desc": "{method}",
+      "descInstallments": "{method} em {n}x"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "confirm": "Confirmar seleção"
+    }
+  },
+  "tomadorModal": {
+    "title": "Novo Tomador",
+    "description": "Preencha os dados básicos para cadastrar o tomador",
+    "fields": {
+      "name": "Nome / Razão Social",
+      "namePlaceholder": "Ex.: Construtora Alfa LTDA",
+      "nameRequired": "Nome é obrigatório",
+      "cnpj": "CNPJ",
+      "cnpjPlaceholder": "00.000.000/0000-00",
+      "cnpjRequired": "CNPJ deve ter 14 dígitos",
+      "phone": "Telefone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "email": "E-mail de contato",
+      "emailRequired": "E-mail é obrigatório",
+      "emailInvalid": "E-mail inválido",
+      "responsible": "Responsável",
+      "responsiblePlaceholder": "Nome do contato",
+      "position": "Cargo",
+      "positionPlaceholder": "Ex.: Gerente Financeiro"
+    },
+    "toast": {
+      "title": "Tomador cadastrado!",
+      "desc": "{name} adicionado com sucesso."
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "submit": "Cadastrar tomador"
+    }
+  }
+}
