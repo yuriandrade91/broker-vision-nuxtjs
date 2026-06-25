@@ -1,76 +1,102 @@
+<script setup lang="ts">
+definePageMeta({ layout: false })
+
+const { t } = useI18n()
+
+useHead({
+  title: 'Login - BrokerVision',
+  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+})
+
+const router = useRouter()
+
+const username = ref('')
+const password = ref('')
+const remember = ref(false)
+const submitting = ref(false)
+
+const usernameError = computed(() => {
+  if (!username.value) return t('login.errors.usernameRequired')
+  if (username.value.length < 3) return t('login.errors.usernameMinLength')
+  return ''
+})
+
+const passwordError = computed(() => {
+  if (!password.value) return t('login.errors.passwordRequired')
+  if (password.value.length < 6) return t('login.errors.passwordMinLength')
+  return ''
+})
+
+const isValid = computed(() => !usernameError.value && !passwordError.value)
+
+function submit() {
+  if (!isValid.value) return
+  submitting.value = true
+  setTimeout(() => {
+    submitting.value = false
+    router.push('/home')
+  }, 300)
+}
+</script>
+
 <template>
-  <div>
-    <UPageHero
-      title="Nuxt Starter Template"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
-      :links="[{
-        label: 'Get started',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-        target: '_blank',
-        trailingIcon: 'i-lucide-arrow-right',
-        size: 'xl'
-      }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-templates/starter',
-        target: '_blank',
-        icon: 'i-simple-icons-github',
-        size: 'xl',
-        color: 'neutral',
-        variant: 'subtle'
-      }]"
-    />
+  <div class="min-h-screen bg-[#0b2540] flex items-center justify-center p-6">
+    <UCard class="max-w-4xl w-full overflow-hidden bg-transparent">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 p-10 bg-linear-to-b from-sky-700 to-sky-900 text-white flex flex-col">
+          <div class="flex items-center gap-3">
+            <div class="bg-white text-[#0b2540] font-semibold rounded-full px-3 py-1 text-sm">BrokerVision</div>
+            <h2 class="text-2xl font-bold">{{ $t('login.appName') }}</h2>
+          </div>
+          <p class="mt-6 text-sky-100/90 leading-relaxed">
+            {{ $t('login.appSubtitle') }}
+          </p>
+          <div class="mt-auto text-sm text-sky-100/80">{{ $t('login.copyright', { year: new Date().getFullYear() }) }}</div>
+        </div>
 
-    <UPageSection
-      id="features"
-      title="Everything you need to build modern Nuxt apps"
-      description="Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system."
-      :features="[{
-        icon: 'i-lucide-rocket',
-        title: 'Production-ready from day one',
-        description: 'Pre-configured with TypeScript, ESLint, Tailwind CSS, and all the best practices. Focus on building features, not setting up tooling.'
-      }, {
-        icon: 'i-lucide-palette',
-        title: 'Beautiful by default',
-        description: 'Leveraging Nuxt UI\'s design system with automatic dark mode, consistent spacing, and polished components that look great out of the box.'
-      }, {
-        icon: 'i-lucide-zap',
-        title: 'Lightning fast',
-        description: 'Optimized for performance with SSR/SSG support, automatic code splitting, and edge-ready deployment. Your users will love the speed.'
-      }, {
-        icon: 'i-lucide-blocks',
-        title: '100+ components included',
-        description: 'Access Nuxt UI\'s comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.'
-      }, {
-        icon: 'i-lucide-code-2',
-        title: 'Developer experience first',
-        description: 'Auto-imports, hot module replacement, and TypeScript support. Write less boilerplate and ship more features.'
-      }, {
-        icon: 'i-lucide-shield-check',
-        title: 'Built for scale',
-        description: 'Enterprise-ready architecture with proper error handling, SEO optimization, and security best practices built-in.'
-      }]"
-    />
+        <div class="w-full lg:w-1/2 p-10 bg-white flex items-center">
+          <div class="w-full">
+            <h1 class="text-2xl font-semibold text-slate-800">{{ $t('login.signIn') }}</h1>
+            <p class="text-sm text-slate-500 mt-1">{{ $t('login.appSubtitle') }}</p>
 
-    <UPageSection>
-      <UPageCTA
-        title="Ready to build your next Nuxt app?"
-        description="Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today."
-        variant="subtle"
-        :links="[{
-          label: 'Start building',
-          to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-          target: '_blank',
-          trailingIcon: 'i-lucide-arrow-right',
-          color: 'neutral'
-        }, {
-          label: 'View on GitHub',
-          to: 'https://github.com/nuxt-ui-templates/starter',
-          target: '_blank',
-          icon: 'i-simple-icons-github',
-          color: 'neutral',
-          variant: 'outline'
-        }]"
-      />
-    </UPageSection>
+            <form class="mt-6 space-y-4" @submit.prevent="submit">
+              <UFormField :label="$t('login.username')">
+                <UInput
+                  v-model="username"
+                  placeholder="seu.usuario"
+                  class="mt-1 w-full"
+                  :class="usernameError ? 'border-rose-600 ring-1 ring-rose-100' : ''"
+                />
+                <p v-if="usernameError" class="text-xs text-rose-600 mt-1">{{ usernameError }}</p>
+              </UFormField>
+
+              <UFormField :label="$t('login.password')">
+                <UInput
+                  v-model="password"
+                  type="password"
+                  placeholder="••••••••"
+                  class="mt-1 w-full"
+                  :class="passwordError ? 'border-rose-600 ring-1 ring-rose-100' : ''"
+                />
+                <p v-if="passwordError" class="text-xs text-rose-600 mt-1">{{ passwordError }}</p>
+              </UFormField>
+
+              <div class="flex items-center justify-between">
+                <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                  <input v-model="remember" type="checkbox" class="h-4 w-4" />
+                  <span>{{ $t('login.remember') }}</span>
+                </label>
+                <NuxtLink to="/forgot" class="text-sm text-sky-600 hover:underline">{{ $t('login.forgotPassword') }}</NuxtLink>
+              </div>
+
+              <UButton type="submit" :disabled="!isValid || submitting" class="w-full" color="primary">
+                <span v-if="!submitting">{{ $t('login.signIn') }}</span>
+                <span v-else>{{ $t('login.submitting') }}</span>
+              </UButton>
+            </form>
+          </div>
+        </div>
+      </div>
+    </UCard>
   </div>
 </template>
